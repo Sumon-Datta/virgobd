@@ -142,6 +142,79 @@ img .overlay{
     opacity: .2;
 }
 
+
+/* campaign */
+
+.campaign {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);;
+}
+
+.campaign .inner{
+    overflow: hidden;
+}
+
+.campaign .inner img{
+    transition: all .6s ease;
+}
+
+.campaign span{
+    font-size: 12px;
+}
+
+.campaign .inner:hover img{
+    transform: scale(1.2);
+    transform: rotate(10);
+}
+
+
+.campaign .campaign-body .btn-outline-primary {
+    
+        border: 1px solid #121314;
+        border-radius: 0;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        background: 0 0;
+        z-index: 0;
+        padding-top: 8px;
+        padding-bottom: 7px;
+        width: 150px;
+        color: #121314;
+    }
+
+
+.campaign .campaign-body .btn-outline-primary:hover {
+    color: #fff;
+    background: none;
+    border: 1px solid #121314;
+}
+
+
+
+.campaign .campaign-body .btn-outline-primary::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #121314;
+    height: 100%;
+    width: 0%;
+    color: #fff;
+    transform-origin: 0 50%;
+    transition: .5s;
+}
+
+.campaign .campaign-body .btn-outline-primary:hover::before{
+    width: 100%;
+}
+
+
+
+
+/* membership */
+
 .membership{
     position: relative;
 }

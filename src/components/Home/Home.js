@@ -23,6 +23,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faPinterest } from '@fortawesome/free-brands-svg-icons'
+import { Badge } from "react-bootstrap";
 
 
 
@@ -100,135 +101,10 @@ const Home = () => {
     </div>
 
 
-    <div className="w-100">
-        <div className="row">
-        <div className="col-md-12 membership">
-        <img src="./assets/images/membership/new-banner.jpg" alt="" />
-          <div className="content">
-          <h2 className="title">MEMBERSHIP OFFER</h2>
-          <p>20% Off .</p>
-          <a href="">GET OFFER</a>
-          </div>
-        </div>
-      </div>
-      </div>
-      
-    
-
-
-      <div class="card-group">
-  <div class="card">
-  <img src="./assets/images/campaign/image-1.jpg" class="card-img-top" alt="..."/>
-    <div class="card-body">
-      <h5 class="card-title">Career Opportunity</h5>
-      <p class="card-text">Digital Marketing Manager (Fashion Retail)...</p>
-      <a className="btn btn-outline-primary" href="https://www.virgobd.com/news-detail/career-opportunity">See More...</a>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Apply Last Date 20th November</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="./assets/images/campaign/image-3.jpg" class="card-img-top" alt="..."/>
-    <div class="card-body">
-      <h5 class="card-title">Cristmas Day</h5>
-      <p class="card-text"> 25% Offer....</p>
-      <a className="btn btn-outline-primary" href="https://www.virgobd.com/news-detail/career-opportunity">See More...</a>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">End on 26th December</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="./assets/images/campaign/image-2.jpg" class="card-img-top" alt="..."/>
-    <div class="card-body">
-      <h5 class="card-title">Winter Offer</h5>
-      <p class="card-text">15% Offer...</p>
-      <a className="btn btn-outline-primary" href="https://www.virgobd.com/news-detail/career-opportunity">See More...</a>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">End on 16th January</small>
-    </div>
-  </div>
-</div>
 
 
 
-
-    {/* <section class="shops-main">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                <h3 class="locations">Find Us <span></span> <span class="span-two"></span></h3>
-            </div>
-        </div>
-        <div class="row">
-            <input type="hidden" id="district_id" name="district_id"/>
-                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 shop-after-none">
-                    <div class="shop-mainaddress">
-                        <h4>Barisal</h4>
-                        <p class="shop-no"> Bibir Pukur Par,  Sadar Road, Barisal.</p>
-                        <p class="shop-no">Tel: 01988660077</p>
-                        <p class="shop-no">Shopping Hours: 10.00am - 10.00pm</p>
-
-                    </div>
-                </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 shop-after-none">
-                    <div class="shop-mainaddress">
-                        <h4>Bashundhara City</h4>
-                        <p class="shop-no"> Level # 2, Block # C, Shop # 81-82, Panthapath, Dhaka.</p>
-                        <p class="shop-no">Tel: 01988660088</p>
-                        <p class="shop-no">Shopping Hours: 10.00am - 10.00pm</p>
-
-                    </div>
-                </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 shop-after-none">
-                    <div class="shop-mainaddress">
-                        <h4>Bogura</h4>
-                        <p class="shop-no"> Shahid Abdul Zabbar road, Jaleshwaritola, Bogura</p>
-                        <p class="shop-no">Tel: 01958265635</p>
-                        <p class="shop-no">Shopping Hours: 10.00am - 10.00pm</p>
-
-                    </div>
-                </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 shop-after-none">
-                    <div class="shop-mainaddress">
-                        <h4>Feni</h4>
-                        <p class="shop-no"> Shahid Shahidullah Kaysar road, Feni Sadar</p>
-                        <p class="shop-no">Tel: 01958265630</p>
-                        <p class="shop-no">Shopping Hours: 10.00am - 10.00pm</p>
-
-                    </div>
-                </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 shop-after-none">
-                    <div class="shop-mainaddress">
-                        <h4>Hasnabad</h4>
-                        <p class="shop-no"> Star City Shopping Complex, Hasnabad, Keraniganj .</p>
-                        <p class="shop-no">Tel: 01988550066</p>
-                        <p class="shop-no">Shopping Hours: 10.00am - 10.00pm</p>
-
-                    </div>
-                </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 shop-after-none">
-                    <div class="shop-mainaddress">
-                        <h4>Mohammadpur</h4>
-                        <p class="shop-no"> Ground Floor, Landmark Ring Tower, Plot # 32-35, Probal Housing, Ring Road, Adabor, Dhaka.</p>
-                        <p class="shop-no">Tel: 01988550077</p>
-                        <p class="shop-no">Shopping Hours: 10.00am - 10.00pm</p>
-
-                    </div>
-                </div>
-                                    
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                <a href="https://www.virgobd.com/store-locator" class="btn btn-primary">See All</a>
-            </div>
-        </div>
-</div></section> */}
-
-
-<div className="slide-section">
+    <div className="slide-section">
 
 
 
@@ -296,6 +172,79 @@ const Home = () => {
       </Swiper>
 
 </div>
+
+
+
+
+
+
+
+    <div className="w-100">
+        <div className="row">
+        <div className="col-md-12 membership">
+        <img src="./assets/images/membership/new-banner.jpg" alt="" />
+          <div className="content">
+          <h2 className="title">MEMBERSHIP OFFER</h2>
+          <p>20% Off .</p>
+          <a href="">GET OFFER</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    
+
+
+      <div class="card-group mb-3">
+  <div class="card campaign">
+  
+  <div className="inner">
+  <img src="./assets/images/campaign/image-1.jpg" class="card-img-top" alt="..."/>
+  </div>
+
+    <div class="card-body campaign-body">
+      <h5 class="card-title"> <b>Career Opportunity</b> </h5>
+      <p class="card-text">Digital Marketing Manager (Fashion Retail)...</p>
+      <a className="btn btn-outline-primary" href="https://www.virgobd.com/news-detail/career-opportunity">See More...</a>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Apply Last Date 20th November</small>
+    </div>
+  </div>
+  <div class="card campaign mx-3">
+  <div className="inner">
+  <img src="./assets/images/campaign/image-3.jpg" class="card-img-top" alt="..."/>
+  </div>
+    <div class="card-body campaign-body">
+      <h5 class="card-title"> <b>Cristmas Day</b>  <span><Badge bg="primary">New</Badge></span> </h5>
+      <p class="card-text"> 25% Offer....</p>
+      <a className="btn btn-outline-primary" href="https://www.virgobd.com/news-detail/career-opportunity">See More...</a>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">End on 26th December</small>
+    </div>
+  </div>
+  <div class="card campaign">
+  <div className="inner">
+  <img src="./assets/images/campaign/image-2.jpg" class="card-img-top" alt="..."/>
+  </div>
+    <div class="card-body campaign-body">
+      <h5 class="card-title"> <b>Winter Offer</b>  <span><Badge bg="primary">New</Badge></span>  </h5> 
+      <p class="card-text">15% Offer...</p>
+      <a className="btn btn-outline-primary" href="https://www.virgobd.com/news-detail/career-opportunity">See More...</a>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">End on 16th January</small>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
 
 {/* Find Us Section Start */}
 
