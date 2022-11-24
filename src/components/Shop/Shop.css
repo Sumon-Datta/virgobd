@@ -1,0 +1,35 @@
+.shopContainer{
+   
+}
+
+.shopbg{    
+    position: relative;
+   
+}
+
+.shopbg img{
+    width: 100%;
+    margin-top: -67px;
+    height: fit-content;    
+}
+
+.main-content h2{
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 600;
+}
+
+.category-part{
+    position: absolute;
+    left: 0;
+    bottom: 74px;
+    background-color: #fff;
+    display: inline;
+    width: 100%;
+    padding: 20px;
+}

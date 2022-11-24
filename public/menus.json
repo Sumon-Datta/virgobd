@@ -1,0 +1,59 @@
+{
+    "menus":[
+        {
+            "id": 1,
+            "text":"Home",
+            "Link":"/",
+            "dropdown":[]
+        },
+        {
+            "id": 2,
+            "text":"Portfolio",
+            "Link":"/portfolio",
+            "dropdown":[
+                {
+                    "id": 2.1,
+                    "text":"Portfolio view",
+                    "Link":"/Portfolio-view"
+                },
+
+                {
+                    "id": 2.2,
+                    "text":"Portfolio connection",
+                    "Link":"/Portfolio-connection"
+                },
+
+                {
+                    "id": 2.3,
+                    "text":"Portfolio project",
+                    "Link":"/Portfolio-project"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "text":"Shop",
+            "Link":"/shop",
+            "dropdown":[]
+
+        },
+        {
+            "id": 4,
+            "text":"Blog",
+            "Link":"/blog",
+            "dropdown":[]
+        },
+        {
+            "id": 5,
+            "text":"Pages",
+            "Link":"/pages",
+            "dropdown":[]
+        },
+        {
+            "id": 6,
+            "text":"Contact",
+            "Link":"/contact",
+            "dropdown":[]
+        }
+    ]
+}

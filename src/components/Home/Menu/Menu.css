@@ -1,0 +1,15 @@
+ul,li{
+    list-style: none;
+}
+
+.primarymenu a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    color: #fff;
+}
+
+.primarymenu{
+    margin: 0 10px;
+}

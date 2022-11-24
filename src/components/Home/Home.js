@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './Home.css'
 import videoBg from '../assets/video/Comp 1_3_1652251490.mp4'
 
@@ -23,11 +23,20 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faPinterest } from '@fortawesome/free-brands-svg-icons'
-import { Badge } from "react-bootstrap";
+import { Badge, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import Menu from "./Menu/Menu";
 
 
 
 const Home = () => {
+
+  const [menus, setMenu] = useState([])
+
+    useEffect(()=>{
+        fetch('menus.json')
+        .then(res => res.json())
+        .then(data => setMenu(data.menus))
+    }, [])
 
   const settings = {
     dots: true,
@@ -39,10 +48,75 @@ const Home = () => {
 
   return (
     <div>
+
+      {/* <div className="menu-section">
+      <Navbar collapseOnSelect expand="lg" bg="dark" >
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+
+            
+
+          </Nav>
+          <Nav>
+            <Nav.Link href="#deets">More deets</Nav.Link>
+
+            <NavDropdown className="bg-white " title="Account " id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+      </div> */}
+
+
     
-      <video  autoPlay loop muted controls>
+
+    
+    
+      {/* <video  autoPlay loop muted controls>
         <source  src={videoBg} />
-      </video>
+        <div className="contentssss">
+          <h2>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h2>
+        </div>
+      </video> */}
+
+
+      <div className="assets">
+        
+        <video src={videoBg} autoPlay loop muted controls ></video>
+        <div className="fullmenu ">
+    {
+      menus.map(menu => <Menu
+      id = {menu.id}
+      menu = {menu}
+      ></Menu>)
+    }
+    
+    </div> 
+    </div>
+
+
+
+
+
+    
+      
+    
 
 
 
@@ -477,3 +551,5 @@ const Home = () => {
 };
 
 export default Home;
+
+
