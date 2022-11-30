@@ -2,7 +2,8 @@ import { faFacebookF, faInstagram, faPinterest, faTwitter, faYoutube } from "@fo
 import { faCreditCard, faGift, faMapLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
-import Pagination from "./pagination/Pagination";
+import Pagination from "../Pagination/Pagination";
+
 
 import "./Shop.css";
 

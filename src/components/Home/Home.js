@@ -49,44 +49,6 @@ const Home = () => {
   return (
     <div>
 
-      {/* <div className="menu-section">
-      <Navbar collapseOnSelect expand="lg" bg="dark" >
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-
-            
-
-          </Nav>
-          <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-
-            <NavDropdown className="bg-white " title="Account " id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-      </div> */}
-
-
-    
-
-    
     
       {/* <video  autoPlay loop muted controls>
         <source  src={videoBg} />
@@ -96,19 +58,16 @@ const Home = () => {
       </video> */}
 
 
-      <div className="assets">
+       <div className="assets">
         
         <video src={videoBg} autoPlay loop muted controls ></video>
         <div className="fullmenu ">
-    {
-      menus.map(menu => <Menu
-      id = {menu.id}
-      menu = {menu}
-      ></Menu>)
-    }
+    
     
     </div> 
-    </div>
+    </div> 
+
+    
 
 
 
@@ -121,7 +80,7 @@ const Home = () => {
 
 
 
-    <div className="w-100">
+    {/* <div className="w-100">
       <div className="row">
         <div className="col-md-4 col-sm-6">
           <div className="card cardimg">
@@ -160,7 +119,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     
 
     
@@ -257,7 +216,7 @@ const Home = () => {
         <div className="row">
         <div className="col-md-12 membership">
         <img src="./assets/images/membership/new-banner.jpg" alt="" />
-          <div className="content">
+          <div className="contentsss">
           <h2 className="title">MEMBERSHIP OFFER</h2>
           <p>20% Off .</p>
           <a href="">GET OFFER</a>
